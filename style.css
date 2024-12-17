@@ -219,14 +219,43 @@ button{
 
 
 .skill-card{
-   
     width: 400px;
     height: 241px;
     margin-top: 137px;
     background:#212121;
     margin-left: 32px;
 
+    position: relative;
+    background-color: #1e1e1e;
+    color: #888;
+    border-radius: 8px;
+    overflow: hidden; 
+    transition: all 0.5s ease;
+
+
 }
+
+.skill-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px; 
+    background-color: #00ff88; 
+    transition: 0.5s ease; 
+  }
+  
+
+  .skill-card:hover::after {
+    width: 100%;
+  }
+  
+
+  .skill-card:hover {
+    color: #fff; 
+    cursor: pointer;
+  }
 
 .skill-img img{
     margin-top: 34px;
@@ -244,10 +273,10 @@ button{
     color: #535353;
 }
 
-.card2{
+/* .card2{
     border: none;
     border-bottom: 1px solid var(--green-color);
-}
+} */
 
 
 /* skill2 */
