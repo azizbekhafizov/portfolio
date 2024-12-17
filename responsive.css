@@ -1,94 +1,102 @@
-/* Asosiy stil (default desktop view) */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-  }
-  
-  .navbar .logo {
-    font-size: 24px;
-  }
-  
-  .navbar .menu {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .menu a {
-    text-decoration: none;
-    color: #333;
-  }
-  
-  /* Hero section */
-  .hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 500px;
-    background-color: #f4f4f4;
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 48px;
-  }
-  
-  /* Media Queries - Responsive */
-  
-  /* Planshetlar (768px - 1199px) */
-  @media (max-width: 1199px) {
-    .container {
-      width: 90%;
+@media only screen and (max-width:600px){
+    body{
+        height:100vh ;
     }
-  
-    .navbar {
-      flex-direction: column;
+    html{
+        height: 100vh;  
     }
-  
-    .navbar .menu {
-      flex-direction: column;
-      gap: 10px;
+    .site-now-togeller{
+        display: none;
     }
-  
-    .hero h1 {
-      font-size: 36px;
+    .nav-togller{
+        display: block;
     }
-  }
-  
-  /* Telefonlar (767px va kichik) */
-  @media (max-width: 767px) {
-    .container {
-      width: 95%;
+}
+
+
+@media only screen and (max-width:1200px){
+    body{
+        height:100vh ;
     }
-  
-    .navbar {
-      flex-direction: column;
-      text-align: center;
+    html{
+        height: 100vh;  
     }
-  
-    .menu a {
-      font-size: 14px;
+
+    .hero{
+        text-align: center;
+        background-image: url(./img/20220930_183853.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+
     }
-  
-    .hero {
-      height: 300px;
+    .hero-bg{
+        display: none;
     }
-  
-    .hero h1 {
-      font-size: 28px;
+}
+ 
+
+@media only screen and (max-width:600px){
+    body{
+        height:100vh ;
     }
-  }
-  
+    html{
+        height: 100vh;  
+    }
+
+    .skill-percent-card{
+        display: block;
+        height: 100%;
+    }
+    .skill-card{
+        display: flex;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width:910px){
+    body{
+        height:100vh ;
+    }
+    html{
+        height: 100vh;  
+    }
+
+    .skill-percent-card{
+        display: block;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width:800px){
+    body{
+        width:100v ;
+    }
+    html{
+        width: 100vh;
+    }
+
+    .form-input{
+        width: 90%;
+    }
+
+    .form-input:not(:first-child){
+        margin-top: 32px;
+    }
+
+    .input-left{
+        margin-left: 0px;
+    }
+
+    .input-top{
+        margin-bottom: 0px;
+    }
+
+    .text-aria{
+        width: 90%;
+    }
+}
