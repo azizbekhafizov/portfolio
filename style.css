@@ -389,7 +389,7 @@ button{
 
 /* responsive */
 
-@media only screen and (max-width:600px){
+/* @media only screen and (max-width:600px){
     body{
         height:100vh ;
     }
@@ -490,6 +490,6 @@ button{
     .text-aria{
         width: 90%;
     }
-}
+} */
 
 

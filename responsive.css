@@ -1,0 +1,94 @@
+/* Asosiy stil (default desktop view) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .navbar .logo {
+    font-size: 24px;
+  }
+  
+  .navbar .menu {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Hero section */
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #f4f4f4;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+  }
+  
+  /* Media Queries - Responsive */
+  
+  /* Planshetlar (768px - 1199px) */
+  @media (max-width: 1199px) {
+    .container {
+      width: 90%;
+    }
+  
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar .menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero h1 {
+      font-size: 36px;
+    }
+  }
+  
+  /* Telefonlar (767px va kichik) */
+  @media (max-width: 767px) {
+    .container {
+      width: 95%;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .menu a {
+      font-size: 14px;
+    }
+  
+    .hero {
+      height: 300px;
+    }
+  
+    .hero h1 {
+      font-size: 28px;
+    }
+  }
+  
