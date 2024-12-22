@@ -32,6 +32,10 @@
     />
   </head>
   <body>
+
+    <div class="loading-screen">
+      <div class="spinner"></div>
+    </div>
     <!-- container -->
     <div class="container">
       <!-- header -->
@@ -225,5 +229,12 @@
       </div>
     </div>
     <!-- container -->
+     <script>
+      // Sayt yuklanib bo'lgach, loading ekranni o'chirish
+window.addEventListener("load", function () {
+  document.body.classList.add("loaded");
+});
+
+     </script>
   </body>
 </html>
